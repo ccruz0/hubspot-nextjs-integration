@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  redirects: () => [
-    {
-      source: "/",
-      destination: "/migrate",
-      permanent: true,
-    },
-  ],
+  // limpio, sin redirects y sin experimental obsoleto
 };
 
 export default nextConfig;
