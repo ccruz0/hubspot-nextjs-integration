@@ -1,12 +1,13 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  redirects: () => [
+    {
+      source: "/",
+      destination: "/migrate",
+      permanent: true,
+    },
+  ],
+};
 
-import Container from "@/components/container"
-import React, { useEffect } from 'react'
-
-const Page = () => {
-
-  return (
-    <div>Page</div>
-  )
-}
-
-export default Page
+export default nextConfig;
+export const dynamic = 'force-dynamic';
