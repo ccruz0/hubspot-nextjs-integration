@@ -1,5 +1,5 @@
-import ContactsTable from "@/components/contacts"
-const ContactsPage = () => {
+import ContactsTable from "@/components/contacts/table"
+  const ContactsPage = () => {
   return (
     <div>
       <ContactsTable />
