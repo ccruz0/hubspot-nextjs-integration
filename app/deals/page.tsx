@@ -10,3 +10,4 @@ const DealsPage = () => {
 }
 
 export default DealsPage
+export const dynamic = 'force-dynamic';
