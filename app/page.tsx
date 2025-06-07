@@ -1,13 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  redirects: () => [
-    {
-      source: "/",
-      destination: "/migrate",
-      permanent: true,
-    },
-  ],
-};
+export default function HomePage() {
+  return <div>Redirecting...</div>;
+}
 
-export default nextConfig;
 export const dynamic = 'force-dynamic';
