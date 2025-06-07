@@ -9,7 +9,7 @@ import { useState } from "react";
 
 type TMode = "contacts" | "deals"
 
-export const buttonClassNames = "w-auto inline-block bg-orange-100 px-4 py-2 rounded text-xs text-orange-500 font-bold disabled:bg-orange-50 disabled:text-orange-200"
+import { buttonClassNames } from "@/components/styles/buttonClassNames";
 
 function hasAllKeys(obj: any, keys: any) {
   return _.every(keys, (key) => _.has(obj, key));
