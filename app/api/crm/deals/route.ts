@@ -1,14 +1,9 @@
-import { hubspotClient } from "@/hubspot/client"
-import { NextApiRequest } from "next"
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export async function GET(
-  req: NextApiRequest,
-) {
-  try {
-    const deals = await hubspotClient.crm.deals.getAll()
-    return Response.json(deals)
-
-  } catch(e) {
-    return Response.error()
-  }
+export async function GET(request: NextRequest) {
+  return NextResponse.json({
+    message: 'Dummy deals response',
+    deals: [],
+  })
 }
