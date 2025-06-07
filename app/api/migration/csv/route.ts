@@ -1,7 +1,9 @@
-import type { NextApiRequest } from 'next'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export function GET(
-  req: NextApiRequest
-) {
-
+export async function GET(request: NextRequest) {
+  return NextResponse.json({
+    message: 'Dummy migration csv response',
+    data: [],
+  })
 }
