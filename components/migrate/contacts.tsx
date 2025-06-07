@@ -6,7 +6,7 @@ import { CompactTable } from '@table-library/react-table-library/compact';
 import { getTheme } from '@table-library/react-table-library/baseline';
 import _ from "lodash"
 import React, { FC, useEffect, useMemo } from 'react'
-import { buttonClassNames } from "@/components/styles/buttonClassNames";
+import { buttonClassNames } from "../styles/buttonClassNames";
 import { useQueue, useToggle } from "@uidotdev/usehooks";
 import { parseDeal } from "@/utils/deals";
 import { TParsedContact } from "@/utils/contacts";
