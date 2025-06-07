@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import type { Request } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   return NextResponse.json({
     message: 'Dummy migration csv response',
     data: [],
