@@ -8,3 +8,4 @@ import ContactsTable from "@/components/contacts/table"
 }
 
 export default ContactsPage
+export const dynamic = 'force-dynamic';
