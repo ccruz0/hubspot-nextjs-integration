@@ -7,9 +7,6 @@ const nextConfig = {
       permanent: true,
     },
   ],
-  experimental: {
-    serverActions: false,
-  },
 };
 
 export default nextConfig;
