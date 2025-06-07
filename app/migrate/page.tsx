@@ -125,3 +125,4 @@ const MigrationPage = () => {
 }
 
 export default MigrationPage
+export const dynamic = "force-dynamic"
